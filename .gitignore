@@ -1,0 +1,40 @@
+# Go build artifacts
+/bin/
+/pkg/
+/*.exe
+/*.exe~ 
+/*.dll
+/*.so
+/*.dylib
+
+# Go test binary
+*.test
+
+# Go modules cache
+/go.sum
+/go.mod
+
+# Editor directories/files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node/other temp if you use any CLI tools
+node_modules/
+*.log
+
+# Temporary files created by streaming / cache
+*.tmp
+*.cache
+*.bak
+
+# Secrets / keys (AES keys etc.)
+*.key
+*.pem
+*.env

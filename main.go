@@ -106,6 +106,13 @@ func (s *Server) inputLoop() {
 
 func main() {
 	addr := ":3000"
+	if len(os.Args) > 2 {
+		fmt.Println("Usage : go run main.go <port>")
+		os.Exit(1)
+	}
+	if len(os.Args) == 2 {
+		addr = ":" + os.Args[1]
+	}
 	server := NewServer(&addr)
 	go func() {
 		for msg := range server.msgch {
